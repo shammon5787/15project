@@ -67,7 +67,7 @@ const FoodData = [
     },
     {
         id: 6,
-        name: "Food One" ,
+        name: "Food two" ,
         image: img6,
         price: 23.5,
         desc: "ultimate step in avoiding periodic",
@@ -76,7 +76,7 @@ const FoodData = [
     },
     {
         id: 7,
-        name: "Food One" ,
+        name: "Food three" ,
         image: img7,
         price: 23.5,
         desc: "ultimate step in avoiding periodic",
@@ -85,7 +85,7 @@ const FoodData = [
     },
     {
         id: 8,
-        name: "Food One" ,
+        name: "Food four" ,
         image: img8,
         price: 23.5,
         desc: "ultimate step in avoiding periodic",
@@ -103,7 +103,7 @@ const FoodData = [
     },
     {
         id: 10,
-        name: "Food One" ,
+        name: "Food two" ,
         image: img10,
         price: 23.5,
         desc: "ultimate step in avoiding periodic",
@@ -112,7 +112,7 @@ const FoodData = [
     },
     {
         id: 11,
-        name: "Food One" ,
+        name: "Food three" ,
         image: img11,
         price: 23.5,
         desc: "ultimate step in avoiding periodic",
@@ -121,7 +121,7 @@ const FoodData = [
     },
     {
         id: 12,
-        name: "Food One" ,
+        name: "Food four" ,
         image: img12,
         price: 23.5,
         desc: "ultimate step in avoiding periodic",
@@ -139,7 +139,7 @@ const FoodData = [
     },
     {
         id: 14,
-        name: "Food One" ,
+        name: "Food two" ,
         image: img14,
         price: 23.5,
         desc: "ultimate step in avoiding periodic",
@@ -148,7 +148,7 @@ const FoodData = [
     },
     {
         id: 15,
-        name: "Food One" ,
+        name: "Food three" ,
         image: img15,
         price: 23.5,
         desc: "ultimate step in avoiding periodic",
@@ -157,7 +157,7 @@ const FoodData = [
     },
     {
         id: 16,
-        name: "Food One" ,
+        name: "Food four" ,
         image: img16,
         price: 23.5,
         desc: "ultimate step in avoiding periodic",
@@ -175,7 +175,7 @@ const FoodData = [
     },
     {
         id: 18,
-        name: "Food One" ,
+        name: "Food two" ,
         image: img18,
         price: 23.5,
         desc: "ultimate step in avoiding periodic",
@@ -184,7 +184,7 @@ const FoodData = [
     },
     {
         id: 19,
-        name: "Food One" ,
+        name: "Food three" ,
         image: img19,
         price: 23.5,
         desc: "ultimate step in avoiding periodic",
@@ -193,7 +193,7 @@ const FoodData = [
     },
     {
         id: 20,
-        name: "Food One" ,
+        name: "Food four" ,
         image: img20,
         price: 23.5,
         desc: "ultimate step in avoiding periodic",
