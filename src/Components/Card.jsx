@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import { IoMdClose } from "react-icons/io";
 import { BiSolidCart } from "react-icons/bi";
+import CardItem from './CardItem';
+import { useSelector } from 'react-redux';
 
 const Card = () => {
     const [activeCard, setactiveCard] = useState(true)
+    const selectItem = useSelector((state)=>state.cart.cart)
   return (
    <>
     <div className={`bg-blue-950 w-full h-full fixed top-0 right-0 lg:w-[26vw] p-3 ${activeCard ? "translate-x-0" : "translate-x-full"} transition-all duration-500 z-50 `}>
@@ -11,6 +14,15 @@ const Card = () => {
             <h1 className='text-3xl font-semibold'>Your Orders</h1>
             <IoMdClose onClick={()=>setactiveCard(false)} className='text-3xl font-semibold cursor-pointer hover:text-red-950 hover:bg-white rounded-full transition-all duration-500' />
         </div>
+        
+        {
+            selectItem.map((item)=>{
+                return(
+                    <CardItem key={item.id} id = {item.id} name = {item.name} price = {item.price} image = {item.image} qty = {item.qty} />
+                )
+            })
+        }
+
         <div className='font-semibold fixed bottom-0'>
             <h1>Total Items: </h1>
             <h1>Total Price: </h1>
