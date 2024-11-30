@@ -1,28 +1,25 @@
 import React from 'react'
-import img from '../Food/3.avif'
-import { MdOutlineStar } from "react-icons/md";
-import { useDispatch } from 'react-redux';
-import { addCard } from '../Store/CardSlice';
+import img from '../assets/Food/3.avif'
+import { FaStar } from "react-icons/fa6";
 
-const FoodCard = ({id, name, price, image, desc, rating}) => {
-    const dispatch = useDispatch()
+const FoodCard = ({id, name, image, price, rating, desc}) => {
     return (
-        <div className='bg-gradient-to-r from-slate-500 to-slate-700 w-full lg:w-[22vw] mt-3 rounded-md '>
-            <div className='p-3 bg-zinc-600 w-full flex items-center flex-col rounded-t-md hover:bg-white cursor-pointer transition-all duration-700 '>
+        <div className='bg-slate-900 flex flex-col items-center w-full lg:w-[23vw] rounded-md'>
+            <div className='p-3 bg-zinc-900 w-full flex flex-col items-center hover:bg-white transition-all duration-500 cursor-pointer rounded-t-md'>
                 <img className='w-[200px] h-[100px] rounded-md cursor-grab hover:scale-110 transition-all duration-500' src={image} alt="" />
             </div>
-            <div className='p-3'>
+            <div className='w-full p-3 '>
                 <div className='flex items-center justify-between font-semibold'>
                     <h1>{name}</h1>
                     <h1>$: {price}</h1>
                 </div>
-                <p>{desc}?</p>
+                <p className='leading-5 my-2'>{desc}.</p>
                 <div className='flex items-center justify-between'>
-                    <span className='flex items-center gap-1'>
-                        <MdOutlineStar className='text-yellow-400 text-4xl' />
-                        <h1 className='font-semibold'>{rating}</h1>
+                    <span className='flex items-center gap-3'>
+                        <FaStar />
+                        <h1>{rating}</h1>
                     </span>
-                    <button onClick={()=>dispatch(addCard({id, name, price, image, qty: 1}))} className='bg-slate-800 px-2 py-0.5 rounded-md font-semibold hover:text-black hover:bg-white transition-all duration-500 my-2'>Add To Cart</button>
+                    <button className='bg-blue-800 px-2 rounded-md font-semibold hover:bg-green-600 transition-all duration-500'>Add To Card</button>
                 </div>
             </div>
         </div>
