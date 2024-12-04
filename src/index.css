@@ -5,4 +5,5 @@
 body{
   background-color: rgba(9, 10, 19, 0.877);
   color: white;
+  opacity: inherit;
 }

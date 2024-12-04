@@ -4,8 +4,8 @@ import { FaStar } from "react-icons/fa6";
 
 const FoodCard = ({id, name, image, price, rating, desc}) => {
     return (
-        <div className='bg-slate-900 flex flex-col items-center w-full lg:w-[23vw] rounded-md'>
-            <div className='p-3 bg-zinc-900 w-full flex flex-col items-center hover:bg-white transition-all duration-500 cursor-pointer rounded-t-md'>
+        <div className='bg-slate-900 flex flex-col items-center w-full lg:w-[23vw] rounded-md  '>
+            <div className='p-3 bg-zinc-900 w-full flex flex-col items-center hover:bg-white transition-all duration-500 cursor-pointer rounded-t-md opacity-60'>
                 <img className='w-[200px] h-[100px] rounded-md cursor-grab hover:scale-110 transition-all duration-500' src={image} alt="" />
             </div>
             <div className='w-full p-3 '>
