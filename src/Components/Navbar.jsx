@@ -10,7 +10,7 @@ const Navbar = () => {
             <h1>{new Date().toUTCString().slice(0,16)}</h1>
             <h1 className='uppercase'>welcome to our new fast food</h1>
         </div>
-        <input onChange={(e)=>dispatch(addSearch(e.target.value))} className='p-2 outline-none rounded-md w-full lg:w-[25vw] text-black' type="search" name="search" placeholder='search here' id="" />
+        <input onChange={(e)=>dispatch(addSearch(e.target.value))} className='p-2 outline-none rounded-md w-full lg:w-[25vw] text-black' type="search" name="here" placeholder='search here' id="" />
     </div>
   )
 }

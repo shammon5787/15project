@@ -1,8 +1,11 @@
 import React from 'react'
 import img from '../assets/Food/3.avif'
 import { FaStar } from "react-icons/fa6";
+import { useDispatch } from 'react-redux';
+import { addCard } from '../Store/CardSlice';
 
 const FoodCard = ({id, name, image, price, rating, desc}) => {
+    const dispatch = useDispatch()
     return (
         <div className='bg-slate-900 flex flex-col items-center w-full lg:w-[23vw] rounded-md  '>
             <div className='p-3 bg-zinc-900 w-full flex flex-col items-center hover:bg-white transition-all duration-500 cursor-pointer rounded-t-md opacity-60'>
@@ -19,7 +22,7 @@ const FoodCard = ({id, name, image, price, rating, desc}) => {
                         <FaStar />
                         <h1>{rating}</h1>
                     </span>
-                    <button className='bg-blue-800 px-2 rounded-md font-semibold hover:bg-green-600 transition-all duration-500'>Add To Card</button>
+                    <button onClick={()=>dispatch(addCard({id, name, image, rating,price,  qty : 1}))} className='bg-blue-800 px-2 rounded-md font-semibold hover:bg-green-600 transition-all duration-500'>Add To Card</button>
                 </div>
             </div>
         </div>
